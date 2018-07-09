@@ -1,10 +1,10 @@
 <?
 $config =[
- 	'directory_folder_temp' => ''//Путь от корня сайта, до папки temp, в которой будут храниться все временные файлы
+ 	'directory_folder_temp' => ''//The path from the site root to the temp folder where all temporary files will be stored
  ];
 
 
-$directory = $_SERVER['DOCUMENT_ROOT'].$config['directory_folder_temp'].'/temp';//все временные файлы хранятся в папке temp
+$directory = $_SERVER['DOCUMENT_ROOT'].$config['directory_folder_temp'].'/temp';//all temporary files are stored in the temp folder
 
  if(!is_dir($directory)){
     mkdir($directory);
